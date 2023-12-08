@@ -109,6 +109,9 @@ body{
     display: flex;
     align-items: center !important;
 }
+.second-btn{
+    display: none;
+}
 .responsive-1 .icons{
     background-color: var(--primrycolor);
 }
@@ -357,6 +360,18 @@ h1{
 .footer-section a:hover{
     color: var(--black);
 }
+.f-p{
+    padding-right: 160px;
+    padding-top: 40px;
+}
+@media (max-width:1200px) {
+    .nav-dn .nav-2{
+        display: none !important;
+    }    
+    .nav-dn .vr{
+        display: none;
+    }
+}
 @media (max-width:992px){
     .H-top1{
         display: none;
@@ -411,9 +426,6 @@ h1{
         width: 100%;
         padding: 30px;
     }
-    .navbar .container{
-        max-width: 1100px;
-    }
     .navbar-expand-lg .navbar-nav{
         gap: 20px;
     }
@@ -454,10 +466,25 @@ h1{
     .hero img{
         height: 300px;
     }
+    .f-ul{
+        margin-left: -30px;
+    }
     .input-group ::placeholder{
-        color: transparent;
+        /* color: transparent; */
     }
     .heading-card{
         margin-top: 0px;
+    }
+    .input-group .first-btn{
+        display: none;
+    }
+    .second-btn{
+        display: block;
+    }
+    .f-p{
+        padding-right: 0px;
+    }
+    .input-group{
+        width: 280px;
     }
 }
